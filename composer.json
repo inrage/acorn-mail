@@ -1,0 +1,31 @@
+{
+  "name": "inrage/acorn-mail",
+  "type": "package",
+  "description": "Simple WordPress SMTP using Acorn.",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Pascal GAULT",
+      "email": "pascal@inrage.fr",
+      "homepage": "https://www.inrage.fr"
+    }
+  ],
+  "require": {
+    "php": ">=8.3"
+  },
+  "require-dev": {
+    "roots/acorn": "^4.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "inRage\\AcornMail\\": "src/"
+    }
+  },
+  "extra": {
+    "acorn": {
+      "providers": [
+        "inRage\\AcornMail\\AcornMailServiceProvider"
+      ]
+    }
+  }
+}
